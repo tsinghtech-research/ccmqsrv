@@ -1,0 +1,10 @@
+PREFIX=$MINGW_PREFIX
+cmake .. -GNinja \
+         -DCMAKE_BUILD_TYPE=Release \
+         -DBUILD_SHARED_LIBS=ON \
+         -DCMAKE_INSTALL_PREFIX=$PREFIX \
+         -DCMAKE_INSTALL_INCLUDEDIR=$PREFIX/include/ccmqsrv \
+         -DCMAKE_PREFIX_PATH=$PREFIX \
+         -DCMAKE_CXX_FLAGS="-lpthread -Wl,-rpath=$PREFIX/lib -L$PREFIX/lib" \
+         -DBUILD_TEST=OFF \
+         -DBUILD_EXAMPLES=OFF
