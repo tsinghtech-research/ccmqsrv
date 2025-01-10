@@ -1,0 +1,5 @@
+name = "C++"
+version = "11"
+[compiler] 
+name = "GCC"
+version = "10"

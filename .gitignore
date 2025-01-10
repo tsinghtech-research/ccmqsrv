@@ -1,0 +1,10 @@
+.arts
+cmake-build-debug
+cmake-build-release
+cmake-build-minSizeRel
+cmake-build-relWithDebInfo
+build/
+__pycache__
+log*/
+!.gitignore
+.vscode/
